@@ -8,14 +8,20 @@ What value do you think it offers?
 	
 How can you use the staging area to make sure you have one commit per logical
 change?
+	I can use 'git diff' and 'git diff --staged' to find what files i am about to commit. if i dont want to add a locally changes file to the repository i can just not git add that file. Also i can discard any changes in working directory/staging area by using 'git reset --hard' 
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-
+	If i wanted to do a trial change in the project, i can do it in a branch and show to team mates. If it is approved i could then merge it to the master branch.
+	During working on a branch, if i had to fix a bug on master, i could jst checkout master and do that. Afterwards i can return back to my branch my checking out that branch.
+	
 How do the diagrams help you visualize the branch structure?
+	it helps in keeping track of commit changes. By drawing the commit nodes and the arrows back to its parent commit, its easier to visualize any detached head. Also its easy to visualize how a commit can access or not access another commit. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+    If a branch is merged onto a master branch, the commit history of the merged branch is perserved in the master branch. so the label of the branch is no longer needed to trace back its commits.
+    We represent it in the diagram with arrow pointing to its parent commit, so we can visualize what the commit's parent commit is.
 
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
