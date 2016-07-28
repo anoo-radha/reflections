@@ -23,5 +23,8 @@ the diagram the way we do?
     If a branch is merged onto a master branch, the commit history of the merged branch is perserved in the master branch. so the label of the branch is no longer needed to trace back its commits.
     We represent it in the diagram with arrow pointing to its parent commit, so we can visualize what the commit's parent commit is.
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	When different files have been modified on different branche, automatic merge could make it easy by merging those files without one person going through the lines modified by the other person. It wil be much quicker and remove any human errors.
+	But when the same file is modified in the same place, then manual merge is the goto. the lines of code that is conflicted must be checked by both parties and the approriate changes must be commited.
+
